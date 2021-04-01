@@ -110,29 +110,4 @@ input[type="radio"]~label {
 }
 
 
-/* ------------- Media Query -------------------- */
-
-@media screen and (min-width: 480px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        margin: 8px 12px;
-    }
-    p>.center {
-        text-align: center;
-        font-size: 16px;
-    }
-    input,
-    .city,
-    select,
-    option,
-    textarea {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        flex-wrap: wrap;
-    }
-}
+/*  */
