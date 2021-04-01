@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 30px;
+}
+
+.center {
+    text-align: center;
+    font-size: x-large;
+}
+
+h3 {
+    text-align: center;
+    color: orange;
+    font-family: 'ChunkFive', sans-serif;
+    font-weight: 60;
+    font-size: 70px;
+    border-bottom: 50px;
+    padding-bottom: 70px;
+    margin-top: 100px;
+}
+
+h4,
+p,
+option {
+    color: #464646;
+    margin: 30px 20%;
+    display: block;
+    padding: 12px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20%;
+}
+
+input,
+.city,
+select,
+option,
+textarea {
+    flex: 1;
+    margin: 0px 12px;
+    padding: 15px;
+    border-radius: 5px;
+    outline-width: 0px;
+    border: 1px solid;
+}
+
+input:hover,
+.city:hover,
+select:hover,
+option:hover,
+input:focus,
+.city:focus,
+select:focus,
+option:focus,
+textarea:focus,
+textarea:hover {
+    border: 2px solid rgb(72, 137, 235);
+}
+
+textarea {
+    height: 200px;
+}
+
+.radio {
+    display: inline-block;
+    width: 100%;
+    /* margin: 30px 20%;
+    padding: 12px; */
+}
+
+.short {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.btn>button {
+    text-align: center;
+    padding: 20px 60px;
+    margin: 20px auto;
+    background-color: orange;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"]~label {
+    display: inline;
+}
+
+.letter>h4,
+.letter>p {
+    padding: 5px 0;
+    margin: 5px 20%;
+}
+
+
+/* ------------- Media Query -------------------- */
+
+@media screen and (min-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 8px 12px;
+    }
+    p>.center {
+        text-align: center;
+        font-size: 16px;
+    }
+    input,
+    .city,
+    select,
+    option,
+    textarea {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+}

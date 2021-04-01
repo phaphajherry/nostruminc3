@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/chunkfive-print" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p class="center">Thank you for choosing Golden Shore RV Resort. To make a reservation, call us at 1 (800) 668-3581 or complete the information below to submit a reservation inquiry. Within 48 hours we will contact you to confirm availability, and to assist with any
+        questions you may have.</p>
+
+    <form action="app.js" method="POST" class="form" id="form">
+        <div class="row">
+            <input type="text" placeholder="First Name*" required>
+            <input type="text" placeholder="Last Name*" required>
+        </div>
+        <div class="row">
+            <input type="text" placeholder="City*" class="city" required>
+        </div>
+        <div class="row">
+            <input type="text" placeholder="State/Province*" required>
+            <input type="number" placeholder="Zip Code (Postal Code)*" required>
+        </div>
+        <div class="row">
+            <input type="number" placeholder="Phone Number*" required>
+            <input type="text" placeholder="Email*" required>
+        </div>
+        <div class="row">
+            <select name="" id="time">
+                <option value="time">Best time to contact you.</option>
+            </select>
+            <select name="" id="how">
+                    <option value="how">How did you learn about us?</option>
+            </select>
+        </div>
+
+        <!-- ----------------------------- ------------------------- -->
+
+        <h3>Visiting Information</h3>
+
+        <div class="row">
+            <select name="" id="first_day">
+                <option value="first_day" aria-required="true">First Day*</option>
+            </select>
+            <select name="" id="last_day">
+                <option value="last_day" aria-required="true">Last Day*</option>
+            </select>
+        </div>
+        <div class="row">
+            <input type="number" placeholder="Numbers of Days Stay*" required>
+            <input type="tel" placeholder="For stays over 1 month call (800) 668-3581">
+        </div>
+
+        <div class="row radio">
+            <label for="persons">Number of Persons*</label>
+            <input type="radio" name="number_of_persons" id="one">
+            <label for="one">1</label>
+            <input type="radio" name="number_of_persons" id="two">
+            <label for="two">2</label>
+            <input type="radio" name="number_of_persons" id="three">
+            <label for="three">3</label>
+            <input type="radio" name="number_of_persons" id="four">
+            <label for="four">4</label>
+            <input type="radio" name="number_of_persons" id="five">
+            <label for="five">5 (Additional Charge)<i class="fas fa-500px    "></i></label>
+            <input type="radio" name="number_of_persons" id="six">
+            <label for="six">6 (Additional Charge)</label>
+        </div>
+
+        <div class="row radio">
+            <label for="pets" aria-required="true">Number of Pets*</label>
+            <input type="radio" name="pets_number" id="pet_one">
+            <label for="pet_one">1</label>
+            <input type="radio" name="pets_number" id="pet_two">
+            <label for="pet_two">2</label>
+        </div>
+
+        <div class="row">
+            <input type="number" placeholder="Promo Code">
+        </div>
+
+        <!-- --------------------------------------------- RV ---------- -->
+
+        <h3>RV Information</h3>
+
+        <div class="row radio">
+            <label for="">Type of RV</label>
+            <input type="radio" name="rv_type" id="coach">
+            <label for="coach">Motor Coach</label>
+            <input type="radio" name="rv_type" id="home">
+            <label for="home">Motor Home</label>
+            <input type="radio" name="rv_type" id="wheel">
+            <label for="wheel">Fifth Wheel</label>
+            <input type="radio" name="rv_type" id="trailer">
+            <label for="trailer">Trailer</label>
+            <input type="radio" name="rv_type" id="camper">
+            <label for="camper">Camper</label>
+        </div>
+
+        <div class="row radio">
+            <label for="slides_number">Number of Slide Outs</label>
+            <input type="radio" name="one" id="slide_one">
+            <label for="slide_one">1</label>
+            <input type="radio" name="one" id="slide_two">
+            <label for="slide_two">2</label>
+            <input type="radio" name="one" id="slide_three">
+            <label for="slide_three">3</label>
+        </div>
+
+        <div class="row">
+            <select name="length" id="length" class="short">
+                <option value="">Length of RV Feet</option>
+            </select>
+        </div>
+
+        <h3>Group Information</h3>
+
+        <div class="row">
+            <input type="text" placeholder="Total Number of Rigs" class="short">
+        </div>
+
+        <div class="row radio">
+            <label for="group">Joining a Group?</label>
+            <input type="radio" name="group_joining" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="group_joining" id="no">
+            <label for="no">No</label>
+        </div>
+
+        <div class="row">
+            <input type="number" placeholder="Group Contact">
+        </div>
+
+        <div class="row">
+            <textarea name="" placeholder="Comments" id=""></textarea>
+        </div>
+
+        <div class="row radio">
+            <input type="radio" name="rules" id="rules">
+            <label for="rules">By selecting this box, I accept and understand the rules and regulations of Golden Shore RV Resort.
+        </label>
+        </div>
+
+        <div class="letter">
+            <h4>Daily Deposit</h4>
+            <p>First night deposit is required. Deposit(s) Will be refunded (less processing fee: $20) if the cancellation is received more than 2 days prior to arrival. Deposit(s) will be forfeited for cancellation(s) less than 48 hours prior to arrival.</p>
+        </div>
+
+        <div class="letter">
+            <h4>Weekly Deposiit</h4>
+            <p>$390.00 deposit is required for more than 2 weeks. $150.00 up to 2 weeks. Any changes or cancellations anytime forfeit $150.00 of your deposit</p>
+        </div>
+
+        <div class="letter">
+            <h4>Conditions / Policies</h4>
+            <p>Check-In time: 2:00 pm - 7:00 pm</p>
+            <p>Check-Out time: 12 Noon</p>
+        </div>
+
+        <div class="letter">
+            <p>RV sites are available for check-in after 2:00 pm</p>
+            <p>Refunds will not be issued for early departure - no exceptions</p>
+            <p>Reservations are recommended</p>
+        </div>
+
+        <div class="letter">
+            <p>Rates are subject to change without prior noticeup to 2 weeks. Any changes or cancellations anytime forfeit $150.00 of your deposit Conditions / Policies Check-In time: 2:00 pm – 7:00 pm Check-Out time: Noon RV sites are available for check-in
+                after 2PM Refunds will not be issued for early departure – no exceptions Reservations are recommended Rates are subject to change without prior notice</p>
+        </div>
+
+
+
+        <!-- -------------- Button ------------------------------ -->
+
+        <div class="row btn">
+            <button type="submit">Reserve Now</button>
+        </div>
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
